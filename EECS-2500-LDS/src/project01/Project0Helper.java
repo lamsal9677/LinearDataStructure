@@ -101,7 +101,7 @@ public class Project0Helper implements MailAddressInterface{
 		Project0Helper helper = new Project0Helper();
 		Scanner myscanner;
 		try {
-			myscanner = new Scanner(new File("test.txt") );
+			myscanner = new Scanner(new File("res/test.txt") );
 			try {
 				for (int i= 0; i < 100; i++) {
 					String name = myscanner.nextLine();
@@ -115,7 +115,7 @@ public class Project0Helper implements MailAddressInterface{
 					System.out.println(myList[i]);
 				}
 			} catch(NoSuchElementException e) {
-				// end of input?
+				
 			}
 
 			helper.checkStartingOrder(myList);
