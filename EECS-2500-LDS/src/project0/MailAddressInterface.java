@@ -1,7 +1,13 @@
 package project0;
-
 /**
+ * MailAddressInterface.java
+ * Project 0
  * 
+ * This file is the interface MailAddressInterface that is implemented in ConcreteMailAddress
+ * 
+ * Sanskar Lamsal
+ * EECS 2500 - Linear Data Structure in Java
+ * Dr. Gerald R. Heuring
  */
 
 /**
