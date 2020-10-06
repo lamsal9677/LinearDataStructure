@@ -7,6 +7,9 @@ public class Stacks {
 		
 		Stack<String> games = new Stack<String>(); //This is making a stack Stack stack = new Stack();
 		
+		//Stack games = new Stack(); //This is making a stack Stack stack = new Stack();
+		
+		
 		games.add("Fortnite");
 		games.add("COD");
 		games.add("Dota");
@@ -16,7 +19,12 @@ public class Stacks {
 		System.out.println(games);
 		System.out.println(games.pop());//removes LIFO
 		System.out.println(games);
-		System.out.println(games.pop());//Removes LIFO
+		
+		
+		String name =games.pop();//Removes LIFO
+		System.out.println(name);
+		
+		
 		System.out.println(games);
 		System.out.println(games.peek());//look like pop but leaves stack as it is
 		System.out.println(games);

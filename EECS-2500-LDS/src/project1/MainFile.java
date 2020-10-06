@@ -28,7 +28,7 @@ public class MainFile {
 		int BinaryEquivalent=0;
 		while(CurrentIndex <= End) {
 			BinaryEquivalent = inBinary(CurrentIndex);
-			if (isPalindrome(CurrentIndex) && isPalindrome(BinaryEquivalent)) {
+			if (isPalindromeInNormalWay(CurrentIndex) && isPalindromeInNormalWay(BinaryEquivalent)) {//does check in normal way
 				System.out.printf("%-16d"+"%d"+"\n",CurrentIndex,BinaryEquivalent);		
 			}
 		CurrentIndex++;
@@ -63,7 +63,18 @@ public class MainFile {
 		return Integer.parseInt(BinaryEquivalent);
 	}
 	
-	public static boolean isPalindrome(int CheckPalindrome) {
-		return true;
+	public static boolean isPalindromeInNormalWay(int Number) {
+		
+		String NumberString = Integer.toString(Number);
+		
+		int i=0;int j=NumberString.length()-1;
+		while (i<j) {
+			if (NumberString.charAt(i)!=NumberString.charAt(j)) {
+				return false;
+			}
+			i++;
+			j--;
+		}
+		return true;		
 	}
 }
